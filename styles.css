@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+:root{
+    --clr-dark-slate-grey: hsl(234, 29%, 20%);
+    --clr-charcoal-grey: hsl(235, 18%, 26%);
+    --clr-grey: hsl(231, 7%, 60%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+.app{
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px;
+    width: 375px;
+    display: grid;
+}
+
+.update h3{
+    font-weight: 400;
+}
+
+li{
+    display: flex;
+}
+
+li::marker{
+    color: transparent;
+    width: 0;
+}
