@@ -18,22 +18,107 @@ body{
     --clr-white: hsl(0, 0%, 100%);
 }
 
+.banner img{
+    width: 375px;
+    height: auto;
+    margin: 0;
+}
+
 .app{
     border-radius: 20px 20px 0px 0px;
     margin: 0px;
     width: 375px;
     display: grid;
+    color: var(--clr-dark-slate-grey);
+    padding-left: 20px;
 }
 
-.update h3{
+.update h1{
+    font-size: 40px;
+}
+
+.update p{
     font-weight: 400;
+    margin-bottom: 15px;
 }
 
-li{
+.list{
+    margin-right: 50px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.list li{
     display: flex;
+}
+
+.list__bullet-point{
+    margin-left: 15px;
+    padding-top: 0px;
+}
+
+.list p{
+    margin: 0px;
+}
+
+.list img{
+    margin-bottom: 40px;
 }
 
 li::marker{
     color: transparent;
     width: 0;
+}
+
+.list ul{
+    margin: 0;
+}
+
+.email p{
+    margin-top: 0px;
+}
+
+.email__address{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.email__address p{
+    margin-bottom: 6px;
+}
+
+.email__input{
+    padding-right: 20px;
+}
+
+.email__input input{
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    border: 1px solid var(--clr-grey);
+    color: var(--clr-dark-slate-grey);
+    border-radius: 7px;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.email__input input::placeholder{
+    color: var(--clr-grey);
+    font-size: 15px;
+}
+
+.subscribe{
+    padding-right: 20px;
+}
+
+.subscribe button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: var(--clr-white);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--clr-dark-slate-grey);
+    border-radius: 7px;
 }
