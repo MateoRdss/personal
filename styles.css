@@ -121,4 +121,37 @@ li::marker{
     font-weight: bold;
     background-color: var(--clr-dark-slate-grey);
     border-radius: 7px;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 760px){
+    *{
+        background-color: var(--clr-charcoal-grey);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row; /* hace que los elementos se ordenen de izquierda a derecha dentro del div */
+        justify-content: space-between; /* distribuye los elementos dentro del div para que haya el maximo espacio posible entre ellos */
+        padding: 30px;
+        margin: 30px;
+        background-color: var(--clr-white);
+        border-radius: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .banner{
+        order: 2; /* en que lugar se coloca dentro de la fila de elementos del "flex-direction: row;" */
+        margin: 0;
+    }
+
+    .app{
+        order: 1;
+        background-color: var(--clr-white);
+        margin: 0;
+    }
+}
+
+.banner img{
+    content: url(assets/images/illustration-sign-up-desktop.svg);
 }
